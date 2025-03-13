@@ -4,22 +4,892 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Perlamutr</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <header>jhghj</header>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-link">
+            <a href="#services">Услуги</a>
+          </li>
+          <li class="header__menu-link">
+            <a href="#about">О нас</a>
+          </li>
+          <li class="header__menu-link">
+            <a href="#action">Акции</a>
+          </li>
+          <li class="header__menu-link">
+            <a href="#team">Команда</a>
+          </li>
+          <li class="header__menu-link">
+            <a href="#">Статьи</a>
+          </li>
+          <li class="header__menu-link">
+            <a href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__menu-link">
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <button class="header__menu-mobile menu" type="button">
+          <span></span>
+        </button>
+      </div>
+      <div class="header__contacts">
+        <div class="header__text">
+          <p class="header__address">г. Новосибирск, ул. Красный проспект, 220 корп. 10, 2 этаж, офис 207
+          </p>
+          <p class="header__working-hours">Время работы: ежедневно с 9:00 до 21:00</p>
+        </div>
+      </div>
+      <div class="header__inner">
+        <div class="header__logo">
+          <img class="header__logo-img" src="./img/header-logo.png" alt="logo">
+        </div>
+        <div class="header__name">
+          <img class="header__name-img" src="./img/header-logo-name.png" alt="logo-name">
+        </div>
+        <img class="header__bg1" src="./img/header-bg1.png" alt="logo-bg">
+        <img class="header__bg2" src="./img/header-bg2.png" alt="logo-bg">
+      </div>
+      <span class="header__btn button-bord">
+        <a class="header__phone button" href="tel:+7382861268">Позвонить</a>
+      </span>
+    </div>
+  </header>
 
   <main class="main">
 
+    <section class="services" id="services">
+      <div class="services__container container">
+        <h3 class="services__title title">Услуги</h3>
+        <div class="services__items">
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="1" src="./img/service/1.svg" alt="icon">
+            </div>
+            <p class="services__name">диагностика</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="2" src="./img/service/2.svg" alt="icon">
+            </div>
+            <p class="services__name">отбеливание</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="3" src="./img/service/3.svg" alt="icon">
+            </div>
+            <p class="services__name">реставрация</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="4" src="./img/service/4.svg" alt="icon">
+            </div>
+            <p class="services__name">протезирование</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="5" src="./img/service/5.svg" alt="icon">
+            </div>
+            <p class="services__name">хирургия</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="6" src="./img/service/4.svg" alt="icon">
+            </div>
+            <p class="services__name">имплантация</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="7" src="./img/service/5.svg" alt="icon">
+            </div>
+            <p class="services__name">лечение кариеса</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="8" src="./img/service/8.svg" alt="icon">
+            </div>
+            <p class="services__name">профилактика</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="9" src="./img/service/3.svg" alt="icon">
+            </div>
+            <p class="services__name">ортодонтия</p>
+          </button>
+          <button type="button" class="services__item">
+            <div class="services__icon">
+              <img class="services__img" id="10" src="./img/service/10.svg" alt="icon">
+            </div>
+            <p class="services__name">эндодонтия</p>
+          </button>
+        </div>
+        <button class="button-bord" id="openCall">
+          <div class="button">заказать звонок</div>
+        </button>
+      </div>
+    </section>
 
+    <section class="about" id="about">
+      <div class="about__container container">
+        <div class="about__title-box title-box">
+          <h3 class="title-box__title title">
+            О нас
+            <div class="title-box__bg title-box__bg_aquamarine"></div>
+          </h3>
+        </div>
+        <div class="about__content">
+          <div class="about__text">
+            <p class="about__paragraph">Стоматология «Perlamutr» — уютная клиника для приема своих любимых пациентов. Мы
+              рады уделить Вам внимание и предложить
+              качественные стоматологические услуги.
+              Наша команда сформирована из врачей- специалистов с достойным уровнем знаний и практических навыков.</p>
+            <p class="about__paragraph">Мы следим за новинками в стоматологии, используем в работе современные материалы
+              и методики. Посещаем учебные
+              мероприятия, семинары, конгрессы для того, чтобы создать для вас достойное качество врачебной помощи.</p>
+            <p class="about__paragraph">Наш коллектив образовался как команда специалистов, объединенных глубоким
+              интересом и увлеченных своей работой, как
+              творчеством. Лучшая реклама для наших докторов — это эмоции и рекомендации благодарных пациентов.</p>
+          </div>
+          <div class="about__diploms">
+            <div class="about__inner">
+              <img class="about__img" src="./img/diploms.png" alt="diploms">
+              <img class="about__bg about__bg-1" src="./img/about-bg1.png" alt="bg">
+              <img class="about__bg about__bg-2" src="./img/about-bg2.png" alt="bg">
+            </div>
+          </div>
+        </div>
+        <h4 class="about__subtitle title">
+          Стоматологическая клиника «ПЕРЛАМУТР»<br />
+          в Новосибирске имеет ряд весомых преимуществ:
+        </h4>
+        <div class="about__wrap">
+          <div class="about__column">
+            <ul class="about__items">
+              <li class="about__item blue">
+                Лицензия на все виды лечебной деятельности нашего медицинского центра
+              </li>
+              <li class="about__item">
+                Составление договора на все виды услуг, которые оказываются в медицинском центре
+              </li>
+              <li class="about__item blue">
+                Оказание полного спектра стоматологических услуг
+              </li>
+              <li class="about__item">
+                Полноценная комплексная стоматологическая диагностика перед началом лечения
+              </li>
+            </ul>
+          </div>
+          <div class="about__column">
+            <ul class="about__items">
+              <li class="about__item blue">
+                Работа на современном оборудовании, применение только сертифицированных расходных материалов от ведущих
+                европейских
+                фирм-производителей, при обязательном строгом соблюдении технологий их применения
+              </li>
+              <li class="about__item">
+                Высокий уровень подготовки персонала
+              </li>
+              <li class="about__item blue">
+                Обеспечение максимального комфорта для пациента во врачебных кабинетах
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__detailed">
+          <button class="about__btn about__btn_expand">подробнее</button>
+          <div class="about__box">
+            <div class="about__wrap">
+              <div class="about__column">
+                <ul class="about__items">
+                  <li class="about__item blue">
+                    Соблюдение всех правил асептики и антисептики, обработка инструментов по системе АнтиСПИД и
+                    АнтиГепатит
+                  </li>
+                  <li class="about__item">
+                    Выполнение всех лечебно-диагностических манипуляций строго по медицинским показаниям в соответствии
+                    с международными
+                    стандартами и научными разработками
+                  </li>
+                  <li class="about__item blue">
+                    Безболезненность любой процедуры — от лечения кариеса до сложного хирургического вмешательства
+                  </li>
+                </ul>
+              </div>
+              <div class="about__column">
+                <ul class="about__items">
+                  <li class="about__item">
+                    Индивидуальных подход к каждому пациенту
+                  </li>
+                  <li class="about__item blue">
+                    Уютная обстановка и атмосфера центра
+                  </li>
+                  <li class="about__item">
+                    Высокое качество стоматологических услуг, по доступным ценам
+                  </li>
+                  <li class="about__item blue">
+                    Медицинский контроль после окончания курса лечения
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="about__btn about__btn_collapse">свернуть</button>
+          </div>
+        </div>
+        <div class="about__slider-wrap">
+          <div class="about__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/1.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/2.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/3.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/4.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/5.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/6.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/7.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/8.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/9.jpg" alt="slider-photo">
+              </div>
+              <div class="about__slide swiper-slide">
+                <img class="about__photo" src="./img/slider-photo-L/10.jpg" alt="slider-photo">
+              </div>
+            </div>
+          </div>
+          <div class="about__prev swiper-button-prev"></div>
+          <div class="about__next swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="action" id="action">
+      <div class="action__container container">
+        <div class="action__title-box title-box">
+          <h3 class="title-box__title action__title title">
+            Консультация <br />
+            и составление плана <br />
+            лечения - бесплатно
+            <div class="title-box__bg title-box__bg_blue"></div>
+          </h3>
+        </div>
+        <div class="action__slider swiper">
+          <div class="swiper-wrapper" id="action-card"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="team__container container">
+        <div class="team__title-box title-box">
+          <h3 class="title-box__title title">
+            Наша команда
+            <div class="title-box__bg title-box__bg_aquamarine"></div>
+          </h3>
+        </div>
+        <div class="team__wrapper">
+          <div class="team__slider-small slider-small swiper">
+            <div class="slider-small__wrapper swiper-wrapper">
+              <div class="slider-small__person person swiper-slide">
+                <div class="person__photo">
+                  <img class="person__img" src="./img/person-S/1.png" alt="person">
+                </div>
+                <div class="person__info">
+                  <p class="person__name">
+                    Кошелева <br />
+                    Ольга <br />
+                    Борисовна <br />
+                  </p>
+                  <p class="person__position">
+                    Директор. Главный врач.<br />
+                    Стоматолог- терапевт.
+                  </p>
+                </div>
+              </div>
+              <div class="slider-small__person person swiper-slide">
+                <div class="person__photo">
+                  <img class="person__img" src="./img/person-S/2.png" alt="person">
+                </div>
+                <div class="person__info">
+                  <p class="person__name">
+                    Позднякова <br />
+                    Наталья <br />
+                    Анатольевна <br />
+                  </p>
+                  <p class="person__position">
+                    Стоматолог- терапевт.
+                  </p>
+                </div>
+              </div>
+              <div class="slider-small__person person swiper-slide">
+                <div class="person__photo">
+                  <img class="person__img" src="./img/person-S/3.png" alt="person">
+                </div>
+                <div class="person__info">
+                  <p class="person__name">
+                    Спиридонова <br />
+                    Анастасия <br />
+                    Евгеньевна <br />
+                  </p>
+                  <p class="person__position">
+                    Стоматолог- терапевт.
+                  </p>
+                </div>
+              </div>
+              <div class="slider-small__person person swiper-slide">
+                <div class="person__photo">
+                  <img class="person__img" src="./img/person-S/4.png" alt="person">
+                </div>
+                <div class="person__info">
+                  <p class="person__name">
+                    Старовойтова <br />
+                    Анна <br />
+                    Петровна <br />
+                  </p>
+                  <p class="person__position">
+                    Стоматолог общей <br />
+                    практики. Ортодонт.
+                  </p>
+                </div>
+              </div>
+              <div class="slider-small__person person swiper-slide">
+                <div class="person__photo">
+                  <img class="person__img" src="./img/person-S/5.png" alt="person">
+                </div>
+                <div class="person__info">
+                  <p class="person__name">
+                    Леонов <br />
+                    Алексей <br />
+                    Юрьевич <br />
+                  </p>
+                  <p class="person__position">
+                    Стоматолог - ортопед. <br />
+                    Стоматолог - хирург.
+                  </p>
+                </div>
+              </div>
+              <div class="slider-small__person person swiper-slide">
+                <div class="person__photo">
+                  <img class="person__img" src="./img/person-S/6.png" alt="person">
+                </div>
+                <div class="person__info">
+                  <p class="person__name">
+                    Широбокова <br />
+                    Надежда <br />
+                    Александровна <br />
+                  </p>
+                  <p class="person__position">
+                    Санитарка.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team__wrapper">
+          <div class="team__slider-big slider-big swiper">
+            <div class="slider-big__wrapper swiper-wrapper">
+              <div class="slider-big__details details swiper-slide">
+                <div class="details__wrapper">
+                  <div class="details__column details__column_left">
+                    <div class="details__photo">
+                      <img class="details__img" src="./img/person-L/1.png" alt="photo">
+                    </div>
+                    <div class="details__name">
+                      Кошелева Ольга Борисовна
+                    </div>
+                  </div>
+                  <div class="details__column details__column_right">
+                    <p class="details__subtitle">Образование:</p>
+                    <ul class="details__items">
+                      <li class="details__item">1996-2001 гг. Новосибирская Государственная Медицинская Академия.</li>
+                      <li class="details__item">2001-2002 гг. Новосибирская Государственная Областная Клиническая
+                        Больница.
+                        Отделение челюстно – лицевой хирургии. Врач-
+                        стоматолог- интерн.</li>
+                      <li class="details__item">2002-2004 гг. Новосибирская Государственная Медицинская Академия.
+                        Ординатура
+                        по терапевтической стоматологии на кафедре
+                        терапевтической стоматологии.</li>
+                      <li class="details__item">2009 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        НГМУ.
+                      </li>
+                      <li class="details__item">2014 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        КемГМА.</li>
+                    </ul>
+                    <p class="details__subtitle">Профессиональные навыки:</p>
+                    <ul class="details__items">
+                      <li class="details__item">Знание анатомии зубов, современных методов лечения и диагностики,
+                        принципов
+                        обезболивания, основ фармакологии и методов
+                        физиотерапии, правил оформления медицинской документации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-big__details details swiper-slide">
+                <div class="details__wrapper">
+                  <div class="details__column details__column_left">
+                    <div class="details__photo">
+                      <img class="details__img" src="./img/person-L/2.png" alt="photo">
+                    </div>
+                    <div class="details__name">
+                      Позднякова
+                      Наталья Анатольевна
+                    </div>
+                  </div>
+                  <div class="details__column details__column_right">
+                    <p class="details__subtitle">Образование:</p>
+                    <ul class="details__items">
+                      <li class="details__item">1996-2001 гг. Новосибирская Государственная Медицинская Академия.</li>
+                      <li class="details__item">2001-2002 гг. Новосибирская Государственная Областная Клиническая
+                        Больница.
+                        Отделение челюстно – лицевой хирургии. Врач-
+                        стоматолог- интерн.</li>
+                      <li class="details__item">2002-2004 гг. Новосибирская Государственная Медицинская Академия.
+                        Ординатура
+                        по терапевтической стоматологии на кафедре
+                        терапевтической стоматологии.</li>
+                      <li class="details__item">2009 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        НГМУ.
+                      </li>
+                      <li class="details__item">2014 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        КемГМА.</li>
+                    </ul>
+                    <p class="details__subtitle">Профессиональные навыки:</p>
+                    <ul class="details__items">
+                      <li class="details__item">Знание анатомии зубов, современных методов лечения и диагностики,
+                        принципов
+                        обезболивания, основ фармакологии и методов
+                        физиотерапии, правил оформления медицинской документации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-big__details details swiper-slide">
+                <div class="details__wrapper">
+                  <div class="details__column details__column_left">
+                    <div class="details__photo">
+                      <img class="details__img" src="./img/person-L/3.png" alt="photo">
+                    </div>
+                    <div class="details__name">
+                      Спиридонова Анастасия Евгеньевна
+                    </div>
+                  </div>
+                  <div class="details__column details__column_right">
+                    <p class="details__subtitle">Образование:</p>
+                    <ul class="details__items">
+                      <li class="details__item">1996-2001 гг. Новосибирская Государственная Медицинская Академия.</li>
+                      <li class="details__item">2001-2002 гг. Новосибирская Государственная Областная Клиническая
+                        Больница.
+                        Отделение челюстно – лицевой хирургии. Врач-
+                        стоматолог- интерн.</li>
+                      <li class="details__item">2002-2004 гг. Новосибирская Государственная Медицинская Академия.
+                        Ординатура
+                        по терапевтической стоматологии на кафедре
+                        терапевтической стоматологии.</li>
+                      <li class="details__item">2009 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        НГМУ.
+                      </li>
+                      <li class="details__item">2014 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        КемГМА.</li>
+                    </ul>
+                    <p class="details__subtitle">Профессиональные навыки:</p>
+                    <ul class="details__items">
+                      <li class="details__item">Знание анатомии зубов, современных методов лечения и диагностики,
+                        принципов
+                        обезболивания, основ фармакологии и методов
+                        физиотерапии, правил оформления медицинской документации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-big__details details swiper-slide">
+                <div class="details__wrapper">
+                  <div class="details__column details__column_left">
+                    <div class="details__photo">
+                      <img class="details__img" src="./img/person-L/4.png" alt="photo">
+                    </div>
+                    <div class="details__name">
+                      Старовойтова Анна Петровна
+                    </div>
+                  </div>
+                  <div class="details__column details__column_right">
+                    <p class="details__subtitle">Образование:</p>
+                    <ul class="details__items">
+                      <li class="details__item">1996-2001 гг. Новосибирская Государственная Медицинская Академия.</li>
+                      <li class="details__item">2001-2002 гг. Новосибирская Государственная Областная Клиническая
+                        Больница.
+                        Отделение челюстно – лицевой хирургии. Врач-
+                        стоматолог- интерн.</li>
+                      <li class="details__item">2002-2004 гг. Новосибирская Государственная Медицинская Академия.
+                        Ординатура
+                        по терапевтической стоматологии на кафедре
+                        терапевтической стоматологии.</li>
+                      <li class="details__item">2009 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        НГМУ.
+                      </li>
+                      <li class="details__item">2014 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        КемГМА.</li>
+                    </ul>
+                    <p class="details__subtitle">Профессиональные навыки:</p>
+                    <ul class="details__items">
+                      <li class="details__item">Знание анатомии зубов, современных методов лечения и диагностики,
+                        принципов
+                        обезболивания, основ фармакологии и методов
+                        физиотерапии, правил оформления медицинской документации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-big__details details swiper-slide">
+                <div class="details__wrapper">
+                  <div class="details__column details__column_left">
+                    <div class="details__photo">
+                      <img class="details__img" src="./img/person-L/5.png" alt="photo">
+                    </div>
+                    <div class="details__name">
+                      Леонов Алексей Юрьевич
+                    </div>
+                  </div>
+                  <div class="details__column details__column_right">
+                    <p class="details__subtitle">Образование:</p>
+                    <ul class="details__items">
+                      <li class="details__item">1996-2001 гг. Новосибирская Государственная Медицинская Академия.</li>
+                      <li class="details__item">2001-2002 гг. Новосибирская Государственная Областная Клиническая
+                        Больница.
+                        Отделение челюстно – лицевой хирургии. Врач-
+                        стоматолог- интерн.</li>
+                      <li class="details__item">2002-2004 гг. Новосибирская Государственная Медицинская Академия.
+                        Ординатура
+                        по терапевтической стоматологии на кафедре
+                        терапевтической стоматологии.</li>
+                      <li class="details__item">2009 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        НГМУ.
+                      </li>
+                      <li class="details__item">2014 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        КемГМА.</li>
+                    </ul>
+                    <p class="details__subtitle">Профессиональные навыки:</p>
+                    <ul class="details__items">
+                      <li class="details__item">Знание анатомии зубов, современных методов лечения и диагностики,
+                        принципов
+                        обезболивания, основ фармакологии и методов
+                        физиотерапии, правил оформления медицинской документации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-big__details details swiper-slide">
+                <div class="details__wrapper">
+                  <div class="details__column details__column_left">
+                    <div class="details__photo">
+                      <img class="details__img" src="./img/person-L/3.png" alt="photo">
+                    </div>
+                    <div class="details__name">
+                      Спиридонова Анастасия Евгеньевна
+                    </div>
+                  </div>
+                  <div class="details__column details__column_right">
+                    <p class="details__subtitle">Образование:</p>
+                    <ul class="details__items">
+                      <li class="details__item">1996-2001 гг. Новосибирская Государственная Медицинская Академия.</li>
+                      <li class="details__item">2001-2002 гг. Новосибирская Государственная Областная Клиническая
+                        Больница.
+                        Отделение челюстно – лицевой хирургии. Врач-
+                        стоматолог- интерн.</li>
+                      <li class="details__item">2002-2004 гг. Новосибирская Государственная Медицинская Академия.
+                        Ординатура
+                        по терапевтической стоматологии на кафедре
+                        терапевтической стоматологии.</li>
+                      <li class="details__item">2009 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        НГМУ.
+                      </li>
+                      <li class="details__item">2014 г. Курсы повышения квалификации по терапевтической стоматологии.
+                        КемГМА.</li>
+                    </ul>
+                    <p class="details__subtitle">Профессиональные навыки:</p>
+                    <ul class="details__items">
+                      <li class="details__item">Знание анатомии зубов, современных методов лечения и диагностики,
+                        принципов
+                        обезболивания, основ фармакологии и методов
+                        физиотерапии, правил оформления медицинской документации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next slider-big__next"></div>
+          <div class="swiper-button-prev slider-big__prev"></div>
+        </div>
+        <button class="button-bord team__bord" id="openPop">
+          <div class="button team__btn">записаться на прием</div>
+        </button>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="reviews__container container">
+        <div class="reviews__title-box title-box">
+          <h3 class="title-box__title title">
+            Отзывы
+            <div class="title-box__bg title-box__bg_aquamarine"></div>
+          </h3>
+        </div>
+        <div class="reviews__slider-box">
+          <div class="reviews__slider swiper">
+            <div class="reviews__wrapper swiper-wrapper">
+              <div class="reviews__slide swiper-slide">
+                <div class="reviews__body">
+                  <span></span>
+                  <div class="reviews__photo">
+                    <img class="reviews__img" src="./img/reviews/1.png" alt="photo-reviews">
+                  </div>
+                  <div class="reviews__content">
+                    <h4 class="reviews__name title">
+                      Дмитрий Григорьев
+                    </h4>
+                    <p class="reviews__text">
+                      Здравствуйте!
+                      Друзья посоветовали обратиться к Олеге Кошелевой в клинику Перламутр.
+                      До того, как я обратился к Ольге Борисовне, я как и многие люди, очень боялся стоматологов.
+                      Но после посещения клиники Перламутр, все мои страхи сошли на нет…
+                      Дружелюбная атмосфера,
+                      приятные врачи,
+                      вежливое обращение и обслуживание пациентов.
+                      Теперь я регулярно, раз в полгода делаю профилактическую чистку зубов в клинике Перламутр.
+                      Отдельно хочу выразить свою благодарность терапевту Кошелевой Ольге Борисовне и ортопеду Лихареву
+                      Александру
+                      Владимировичу
+                      Огромное Вам Спасибо!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">
+                <div class="reviews__body">
+                  <span></span>
+                  <div class="reviews__photo">
+                    <img class="reviews__img" src="./img/reviews/2.png" alt="photo-reviews">
+                  </div>
+                  <div class="reviews__content">
+                    <h4 class="reviews__name title">
+                      Олеся Амбарцумян
+                    </h4>
+                    <p class="reviews__text">
+                      В Перламутре мы лечимся всей семьей. Мой доктор — Ольга Борисовна Кошелева — золотые руки и доброе
+                      сердце!!! И свою
+                      благодарность врачу я хочу выразить в стихах:
+                      Мой милый доктор,
+                      Обаятельный и чуткий,
+                      Как много вы во мне смогли переменить!
+                      Ведь к стоматологу пойти — совсем не шутка, но ваше кресло я успела полюбить!
+                      Я помню, было в первый раз тревожно, страшно, я вас не знала, просто друг мне дал совет.
+                      Но вы — особенная, это очень важно!
+                      Улыбка ваша озаряет кабинет!!!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">
+                <div class="reviews__body">
+                  <span></span>
+                  <div class="reviews__photo">
+                    <img class="reviews__img" src="./img/reviews/3.png" alt="photo-reviews">
+                  </div>
+                  <div class="reviews__content">
+                    <h4 class="reviews__name title">
+                      Соня Шамовская
+                    </h4>
+                    <p class="reviews__text">
+                      Я с лета являюсь пациенткой Ольги Борисовны Кошелевой, хотелось бы поделиться впечатлениями.
+                      Ситуация у меня непростая,
+                      стоматологических проблем очень много, но Ольга Борисовна за эти полгода провела результативную и
+                      большую работу. В ней
+                      я нашла все качества,присущие специалисту — Ольга Борисовна внимательна и обходительна, дает
+                      развернутую консультацию по
+                      каждому пункту лечения, ничего не нужно вытягивать; у нее золотые руки-лечит очень деликатно и
+                      осторожно, в кресле даже
+                      мужчинам не страшно) также я бы отметила пунктуальность и всегда доброжелательное, неравнодушное
+                      отношение. Все это в
+                      совокупности с ослепительной улыбкой делает Ольгу Борисовну прекрасным профессионалом своего дела,
+                      к
+                      которому хочется
+                      возвращаться снова и снова. Чем я и занимаюсь, предвкушая совсем скоро свою настоящую здоровую
+                      улыбку.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__prev swiper-button-prev"></div>
+          <div class="reviews__next swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__container container">
+        <div class="contacts__title-box title-box">
+          <h3 class="title-box__title contacts__title title">
+            Контакты
+            <div class="title-box__bg title-box__bg_blue title-box__bg_contacts"></div>
+          </h3>
+        </div>
+        <div class="contacts__inner">
+          <address class="contacts__content">
+            <ul class="contacts__list">
+              <li class="contacts__link">
+                <a href="tel:+73832861268" class="contacts__phone">
+                  +7 (383) 286-12-68, <br/> +7(913) 007-12-68
+                </a>
+              </li>
+              <li class="contacts__link">
+                <a href="mailto:perlamutrdent@perlamutrdent.ru" class="contacts__email">
+                  perlamutrdent@perlamutrdent.ru
+                </a>
+              </li>
+              <li class="contacts__link">
+                <p class="contacts__address">
+                  г. Новосибирск <br />
+                  ул.Красный проспект, 220 корп. 10 <br />
+                  2 этаж, офис 207
+                </p>
+              </li>
+              <li class="contacts__link">
+                <p class="contacts__working">
+                  Время работы пн.- пт.: 9:00- 21:00
+                </p>
+              </li>
+            </ul>
+          </address>
+          <div class="contacts__text">
+            <p>Удобная парковка. <br/> Имеется пандус и лифт - доступно для маломобильных групп населения.</p>
+          </div>
+        </div>
+        <div class="contacts__mape">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf237b6771c62b5c0252b2d121aa49bb1caba0fe41e6950fd5da6c31c1caee8c&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container container">
+      <img class="footer__bg1" src="./img/header-bg1.png" alt="bg">
+      <img class="footer__bg2" src="./img/header-bg1.png" alt="bg">
+      <img class="footer__logo" src="./img/footer-logo.png" alt="logo">
+      <div class="footer__wrap">
+        <div class="footer__info">
+          <p class="footer__text">
+            Лицензия на осуществление медицинской деятельности<br />
+            № ЛО-54-01-005831 от 05.03.2020 года.<br />
+            Стоматологическая клиника «ПЕРЛАМУТР»<br />
+            ООО «ПЕРЛАМУТР», г. Новосибирск,<br />
+            630049, ул. Красный проспект, 220 корп. 10 <br />
+            ИНН 5402020310, КПП 540201001,<br />
+            ОГРН 1165476122888 от 23.06.2016
+          </p>
+        </div>
+        <div class="footer__socials">
+          <a class="footer__icon" href="#">
+            <img src="./img/icons/vk.svg" alt="social">
+          </a>
+          <a class="footer__icon" href="#">
+            <img src="./img/icons/instagram.svg" alt="social">
+          </a>
+          <a class="footer__icon" href="#">
+            <img src="./img/icons/fb.svg" alt="social">
+          </a>
+        </div>
+      </div>
+      <p class="footer__bottom">
+        Все права защищены © 2016 - 2022
+      </p>
+    </div>
+  </footer>
 
+  <div class="popups-services" id="popups-container"></div>
+
+  <div class="popup-call popup" id="call">
+    <div class="popup__container">
+      <div class="popup-call__body">
+        <div class="popup-call__title">Заказать обратный звонок</div>
+        <form class="popup-call__form active">
+          <label class="popup-call__name" for="name">Имя</label>
+          <input class="popup-call__input popup-call__input_name" type="text" name="name" placeholder="Имя"
+            autocomplete="on">
+          <label class="popup-call__name" for="tel">Телефон</label>
+          <input class="popup-call__input popup-call__input_phone" type="tel" name="tel" placeholder="+7 919 000 0000"
+            autocomplete="on">
+          <button class="popup-call__btn-bord button-bord" type="submit">
+            <div class="popup-call__btn button" id="closeCall">Отправить</div>
+          </button>
+        </form>
+        <div class="popup-call__done">
+          <div class="popup-call__text">Спасибо за вашу заявку! <br> В ближайшее время с вами свяжется наш
+            администратор.
+          </div>
+          <img class="popup-call__img" src="./img/popup-call.png" alt="icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-call popup" id="receipt">
+    <div class="popup__container">
+      <div class="popup-call__body">
+        <div class="popup-call__title">Записаться на прием</div>
+        <form class="popup-call__form receipt__form active">
+          <label class="popup-call__name" for="name">Имя</label>
+          <input class="popup-call__input popup-call__input_name" type="text" name="name" placeholder="Имя"
+            autocomplete="on">
+          <label class="popup-call__name" for="tel">Телефон</label>
+          <input class="popup-call__input popup-call__input_phone" type="tel" name="tel" placeholder="+7 919 000 0000"
+            autocomplete="on">
+          <button class="popup-call__btn-bord popup-call__btn-bord_receipt button-bord" type="submit">
+            <div class="popup-call__btn popup-call__btn_receipt button" id="close">Записаться на прием</div>
+          </button>
+        </form>
+        <div class="popup-call__done receipt__done">
+          <div class="popup-call__text">Спасибо за вашу заявку! <br> В ближайшее время с вами свяжется наш
+            администратор.
+          </div>
+          <img class="popup-call__img" src="./img/popup-call.png" alt="icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/js/main.js"></script>
 </body>
 

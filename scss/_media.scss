@@ -1,0 +1,909 @@
+@media (max-width:1250px) {
+  .services {
+    &__item {
+      font-size: 20px;
+    }
+  }
+
+  .slider-big {
+
+    &__next,
+    &__prev {
+      top: 0;
+    }
+
+    &__next {
+      right: 7px;
+    }
+
+    &__prev {
+      left: 7px;
+    }
+  }
+}
+
+@media (max-width:1200px) {
+  .header {
+    &__bg2 {
+      scale: 0.7;
+      bottom: -100%;
+    }
+
+    &__inner {
+
+      &::after,
+      &::before {
+        width: 60%;
+        height: 60px;
+        right: -55%;
+        background-color: $aquamarine;
+        filter: blur(15px);
+      }
+
+      &::after {
+        bottom: -95%;
+        z-index: 1;
+      }
+
+      &::before {
+        top: 20%;
+        z-index: 1;
+      }
+    }
+  }
+
+
+  .footer {
+    &__bg1 {
+      left: 0;
+    }
+
+    &__bg2 {
+      right: 0;
+    }
+  }
+
+  .popup {
+    &__btn {
+      font-size: 20px;
+    }
+
+    &__form {
+      gap: 2%;
+    }
+  }
+}
+
+@media (max-width:950px) {
+  .services {
+    padding: 90px 0;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__items {
+      row-gap: 40px;
+    }
+
+    &__item {
+      font-size: 16px;
+    }
+
+    &__icon {
+      height: 180px;
+    }
+  }
+
+  .about {
+    &__content {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__diploms {
+      margin: 190px 0;
+    }
+
+    &__wrap {
+      display: block;
+    }
+
+    &__column:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__items {
+      gap: 20px;
+    }
+
+    .swiper {
+      margin: 0;
+    }
+
+    .swiper-button-next {
+      top: 40px;
+      bottom: auto;
+      right: 10px;
+    }
+
+    .swiper-button-prev {
+      top: 40px;
+      bottom: auto;
+      left: 10px;
+    }
+
+    .swiper-button-next::after {
+      content: url('../img/icons/collapse.svg');
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev::after {
+      content: url('../img/icons/collapse.svg');
+      transform: rotate(-90deg);
+    }
+  }
+
+
+  .swiper-button-next {
+    top: 0;
+    bottom: auto;
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    top: 0;
+    bottom: auto;
+    left: 0;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    scale: (1);
+  }
+
+
+  .title-box {
+    &__title {
+      margin: 0 10% 20px
+    }
+  }
+
+  .action {
+    margin-bottom: 75px;
+  }
+
+  .person {
+    &__info {
+      padding: 10px 10px;
+    }
+  }
+
+  .details {
+    &__subtitle {
+      padding-left: 30px;
+    }
+
+    &__items {
+      margin: 10px 0;
+    }
+
+    &__item {
+      padding-left: 30px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .footer {
+
+    &__text,
+    &__bottom {
+      font-size: 18px;
+    }
+  }
+
+  .popup {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+
+      &::after,
+      &::before {
+        height: 60px;
+        width: 150px;
+        top: 15px;
+        left: -40px;
+      }
+    }
+
+    &__column {
+      font-size: 20px;
+    }
+
+    &__content {
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      &::before {
+        width: 12px;
+        height: 12px;
+        left: -25px;
+      }
+    }
+
+    &__form {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__wrap {
+      width: 45%;
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__btn-bord {
+      margin: 20px auto 0;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .header {
+    &__menu {
+      margin-bottom: 50px;
+    }
+
+    &__menu-list {
+      margin: 0 20px;
+    }
+
+    &__contacts {
+      margin-bottom: 90px;
+      width: 390px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__btn {
+      width: 270px;
+      height: 75px;
+      font-size: 20px;
+      padding: 6px 12px;
+    }
+
+    &__inner {
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+
+    &__bg2 {
+      display: none;
+    }
+  }
+
+  .button-bord {
+    max-width: 360px;
+    height: 85px;
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .about {
+    padding-bottom: 50px;
+
+    &__paragraph {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+    }
+
+    &__item {
+      font-size: 20px;
+    }
+
+    &__detailed {
+      margin-bottom: 40px;
+    }
+
+    &__btn {
+      font-size: 22px;
+    }
+
+    &__btn_collapse::after,
+    &__btn_expand::after {
+      scale: (0.8);
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    scale: (0.8);
+  }
+
+  .action {
+    margin-bottom: 20px;
+
+    &__title-box {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  .card {
+    height: 700px;
+    align-items: center;
+    padding: 20px 10px 5px;
+
+
+    &__img-wrap {
+      position: relative;
+      margin: auto -10px 0px;
+      width: calc(100% + 20px);
+      height: 30%;
+
+      &::after,
+      &::before {
+        content: ('');
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        left: 0;
+        filter: blur(5px);
+        background-color: #fff;
+        z-index: 1;
+      }
+
+      &::after {
+        top: -10px;
+      }
+
+      &::before {
+        bottom: -10px;
+      }
+    }
+
+    &__img {
+      position: relative;
+
+    }
+
+    &__icon {
+      position: static;
+      width: 115px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      font-size: 32px;
+      margin-left: 20px;
+    }
+
+    &__item-after {
+      font-size: 20px;
+
+      &::after {
+        width: 10px;
+        height: 10px;
+        left: -20px;
+      }
+    }
+
+    &__price {
+      font-size: 32px;
+      margin-left: 0;
+    }
+
+    &__condition {
+      position: relative;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  .team {
+    &__title-box {
+      margin-bottom: 0;
+    }
+  }
+
+  .slider-small {
+    margin-top: 0;
+  }
+
+  .person {
+    &.swiper-slide-thumb-active {
+      box-shadow: 0 0 7px 7px #C9F2F2;
+    }
+
+    &__info {
+      padding: 5px 5px;
+    }
+  }
+
+  .reviews {
+    margin: 0 0 80px;
+
+    &__slider {
+      margin: 0;
+    }
+
+    &__body {
+      flex-direction: column;
+    }
+  }
+
+  .contacts {
+    &__inner {
+      display: block;
+    }
+    &__content {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      margin-left: 80px;
+      max-width: 340px;
+    }
+  }
+
+  .footer {
+    &__logo {
+      margin-bottom: 25px;
+    }
+
+    &__wrap {
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    &__info {
+      margin-bottom: 15px;
+    }
+
+    &__icon {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .popup {
+    &__input {
+      width: 100%;
+      height: 50px;
+      font-size: 18px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+
+    &__done {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width:700px) {
+  .header {
+    &__menu-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 20px;
+      width: 100%;
+      height: 400px;
+      margin: 0;
+      padding: 30px 100px 0;
+      text-align: center;
+      background-color: $aquamarine;
+      z-index: 2;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-100%);
+      transition: opacity 0.3s, transform 0.3s;
+
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+    }
+
+    &__menu-mobile {
+      display: block;
+    }
+  }
+
+  .services {
+    &__items {
+      grid-template-columns: repeat(3, auto);
+      gap: 10px;
+    }
+
+    &__item {
+      font-size: 14px;
+
+      &:last-child {
+        grid-column: 2;
+      }
+    }
+
+  }
+
+  .popup {
+    overflow-y: scroll;
+
+    &__column {
+      font-size: 18px;
+    }
+
+    &__wrap {
+      width: 360px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      font-size: 18px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .header {
+    &__menu-list {
+      gap: 15px;
+    }
+
+    &__inner {
+      max-width: 80%;
+      margin-bottom: 12%;
+    }
+
+    &__contacts {
+      width: 305px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+
+    &__btn {
+      width: 200px;
+      height: 65px;
+    }
+  }
+
+  .services {
+    padding: 60px 0;
+
+    &__items {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+
+  .button-bord {
+    max-width: 280px;
+    height: 70px;
+    padding: 6px 8px;
+  }
+
+  .button {
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+
+  .title-box {
+    &__title {
+      margin: 0 0 15px;
+    }
+  }
+
+  .about {
+    &__paragraph {
+      font-size: 16px;
+    }
+
+    &__diploms {
+      margin: 140px 0;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+    }
+
+    &__column {
+      padding-left: 25px;
+    }
+
+    &__item {
+      font-size: 16px;
+
+      &::before {
+        width: 15px;
+        height: 15px;
+        top: 5px;
+        left: -25px;
+      }
+    }
+
+    &__detailed {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      font-size: 18px;
+
+      &_expand::after,
+      &_collapse::after {
+        top: -3px;
+        right: -45px;
+        scale: (0.6);
+      }
+
+      &_expand:hover {
+        &::after {
+          top: 2px;
+        }
+      }
+
+      &_collapse:hover {
+        &::after {
+          top: -8px;
+        }
+      }
+    }
+
+    .swiper-button-next {
+      top: 25px;
+      right: 0px;
+    }
+
+    .swiper-button-prev {
+      top: 25px;
+      left: 0px;
+    }
+  }
+
+  .action {
+    &__title {
+      font-size: 22px;
+    }
+  }
+
+  .card {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__item {
+      font-size: 24px;
+    }
+
+    &__item-after {
+      font-size: 18px;
+    }
+
+    &__icon {
+      width: 90px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__price {
+      font-size: 24px;
+    }
+  }
+
+  .details {
+    &__wrapper {
+      display: block;
+    }
+
+    &__column_left {
+      margin-bottom: 20px;
+    }
+
+    &__photo {
+      padding-bottom: 100%;
+    }
+
+    &__img {
+      height: auto;
+    }
+  }
+
+  .slider-small {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .slider-big {
+
+    &__next,
+    &__prev {
+      top: 20%;
+    }
+
+    &__next::after,
+    &__prev::after {
+      scale: 0.8;
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    scale: (0.7);
+  }
+
+  .reviews {
+    &__body {
+      span {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__photo {
+      left: calc(50% + 5px);
+      transform: translateX(-50%);
+    }
+
+    &__prev,
+    &__next {
+      top: 40px;
+    }
+  }
+
+  .contacts {
+    &__title {
+      font-size: 26px;
+    }
+    &__list {
+      margin-left: 0;
+    }
+    &__text {
+      margin-left: 20px;
+    }
+  }
+
+
+  .footer {
+    &__logo {
+      width: 60%;
+    }
+
+    &__icon {
+      height: 30px;
+      width: 30px;
+    }
+
+    &__text,
+    &__bottom {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+
+  .popup {
+    &__body {
+      padding-top: 40px;
+    }
+
+    &__close {
+      top: 10px;
+      right: 10px;
+
+      &::before,
+      &::after {
+        width: 30px;
+      }
+    }
+
+    &__column {
+      font-size: 16px;
+    }
+
+    &__subtitle {
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+
+    &__wrap {
+      width: 280px;
+    }
+
+    &__input {
+      padding: 15px 20px;
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__done {
+      font-size: 18px;
+    }
+  }
+
+}
