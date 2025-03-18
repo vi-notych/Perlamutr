@@ -406,20 +406,6 @@ function sliderTeam() {
   new Swiper(".slider-big", swiperConfig);
 }
 
-//==== slider Rewiews ======================================//
-function sliderRewiews() {
-  new Swiper(".reviews__slider", {
-    direction: "horizontal",
-    //количество слайдов для показа
-    slidesPerView: 1,
-    clickable: true,
-    autoHeight: true,
-    navigation: {
-      nextEl: ".reviews__next",
-      prevEl: ".reviews__prev ",
-    },
-  });
-}
 
 //==== POPUP записаться на прием ===========================//
 function popupReceipt() {
@@ -465,4 +451,62 @@ function popupReceipt() {
   window.addEventListener("click", (e) => {
     if (e.target.classList.contains("popup__container")) removeClass();
   });
+}
+
+
+//==== slider Rewiews ======================================//
+function sliderRewiews() {
+  new Swiper(".reviews__slider", {
+    direction: "horizontal",
+    //количество слайдов для показа
+    slidesPerView: 1,
+    clickable: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: ".reviews__next",
+      prevEl: ".reviews__prev ",
+    },
+  });
+}
+
+//==== верстка карточек slider Rewiews =====================//
+const reviews = document.querySelector(".reviews__wrapper"); 
+if (reviews) {
+  loadReviewsItems();
+}
+
+async function loadReviewsItems() {
+  const response = await fetch ("src/reviews.json",{
+    method:"GET"
+  });
+  if (response.ok) {
+    const responseResult = await response.json();
+    initReviews(responseResult)
+  }else{alert('Error!')};
+}
+
+function initReviews(data) {
+  data.items.forEach((item) => {
+    buildReviewsItem(item);
+  })
+}
+
+function buildReviewsItem(item) {
+  // let reviewsItemTemplate = ``;
+
+  let reviewsItemTemplate = `
+    <div class="reviews__slide swiper-slide">
+      <div class="reviews__body">
+        <span></span>
+        <div class="reviews__photo">
+          <img class="reviews__img" src="${item.img}" alt="photo-reviews">
+        </div>
+        <div class="reviews__content">
+          <h4 class="reviews__name title">${item.title}</h4>
+          <p class="reviews__text">${item.text}</p>
+        </div>
+      </div>
+    </div>             
+  `;
+  reviews.insertAdjacentHTML('beforeend', reviewsItemTemplate);
 }
